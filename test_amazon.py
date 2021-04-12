@@ -26,7 +26,7 @@ class TestAmazon(unittest.TestCase):
           """
 
     def setUp(self):
-        self.driver = webdriver.Chrome("C:/Users/esra.cakmakli/Downloads/chromedriver_win32/chromedriver.exe")
+        self.driver = webdriver.Chrome()
         self.driver.maximize_window()
         self.base_class = BaseClass(self.driver)
         self.amazon_main = MainPage(self.driver)
