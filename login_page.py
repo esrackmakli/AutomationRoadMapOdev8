@@ -3,8 +3,8 @@ from BaseClass.base_class import BaseClass
 
 
 class LoginPage:
-    email = 'esraacakmakli@gmail.com'
-    password = 'esra2207'
+    email = ''
+    password = ''
     EMAIL_TEXT = (By.ID, 'ap_email')
     CONTINUE_BUTTON = (By.ID, 'continue')
     PASSWORD_TEXT = (By.ID, 'ap_password')
