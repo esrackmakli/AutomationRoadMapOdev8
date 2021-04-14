@@ -17,6 +17,7 @@ class LoginPage:
     def login_amazon(self):
         """
         logins to site with given email and password
+        
         """
         self.functions.wait_for_element(self.EMAIL_TEXT).send_keys(self.email)
         self.functions.wait_for_element(self.CONTINUE_BUTTON).click()
