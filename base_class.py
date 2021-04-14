@@ -13,6 +13,7 @@ class BaseClass(object):
         """
         :param selector: locator of the element to find
         :return: returns clickable item given
+        
         """
         return self.wait.until(ec.element_to_be_clickable(selector))
 
@@ -20,6 +21,7 @@ class BaseClass(object):
         """
         :param selector: locator of the element to find
         :return: returns the desired of all clickable items given
+        
         """
         return self.wait.until(ec.presence_of_all_elements_located(selector))
 
