@@ -15,6 +15,7 @@ class WishlistPage:
     def is_there_wishlist_product(self):
         """
         checks if there is product in wishlist
+        
         """
         wishlist_product = self.functions.wait_for_element(self.WISHLIST_PRODUCT)
         assert wishlist_product, "there isn't product in wishlist!"
@@ -22,6 +23,7 @@ class WishlistPage:
     def wishlist_delete(self):
         """
         deletes product from wishlist checks if the product has been successfully deleted
+        
         """
         self.functions.wait_for_element(self.WISHLIST_DELETE_BUTTON).click()
         deleted = self.functions.wait_for_element(self.DELETED)
