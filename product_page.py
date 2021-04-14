@@ -19,12 +19,14 @@ class ProductPage:
     def add_to_list_click(self):
         """
         added to product
+        
         """
         self.functions.wait_for_element(self.ADD_TO_LIST_BUTTON).click()
 
     def create_button_click(self):
         """
         added product to wishlist and checks it
+        
         """
         self.functions.wait_for_element(self.CREATE_BUTTON).click()
         added_to_list = self.functions.wait_for_element(self.ADDED_TO_LIST).text
@@ -33,12 +35,14 @@ class ProductPage:
     def close_button_click(self):
         """
         added product to wishlist and checks it
+        
         """
         self.functions.wait_for_element(self.CONTINUE_SHOPPING).click()
 
     def go_to_shopping_list(self):
         """
         go to the wishlist
+        
         """
         sleep(2)
         self.functions.hover_element(self.ACCOUNT_AND_LIST)
