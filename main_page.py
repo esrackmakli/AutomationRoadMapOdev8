@@ -19,6 +19,7 @@ class MainPage:
     def load_main_page(self):
         """
         loads the given website and checks if it loads successfully
+        
         """
         self.driver.get(self.website)
         main_page_loaded = self.functions.exist_element(self.MAIN_PAGE_CONTROL)
@@ -27,6 +28,7 @@ class MainPage:
     def load_login_page(self):
         """
         loads the login page
+        
         """
         sleep(2)
         self.functions.hover_element(self.SIGN_IN_HOVER)
@@ -35,6 +37,7 @@ class MainPage:
     def search_amazon(self):
         """
         It enters the searchbar and searches for the word to be searched.
+        
         """
         self.functions.wait_for_element(self.SEARCH_BAR).send_keys(self.word_to_search)
         self.functions.wait_for_element(self.SEARCH_BUTTON).click()
