@@ -23,6 +23,7 @@ class TestAmazon(unittest.TestCase):
           11.Go to wishlist
           12.Check if there are products on wishlist
           13.Delete the product from wishlist
+          
           """
 
     def setUp(self):
